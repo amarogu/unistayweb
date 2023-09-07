@@ -22,6 +22,11 @@ module.exports = {
         'borders': '#E5E7EB',
         'background': '#0B1121',
         'background-light': '#F5F5F7',
+      },
+      fontFamily: {
+        einaReg: ['var(--font-eina-reg)'],
+        einaSemi: ['var(--font-eina-semi)'],
+        einaBold: ['var(--font-eina-bold)'],
       }
     },
   },

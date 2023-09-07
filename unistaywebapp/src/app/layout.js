@@ -1,7 +1,20 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import localFont from 'next/font/local'
 
-const inter = Inter({ subsets: ['latin'] })
+const einaReg = localFont({
+    src: './eina-03-regular.ttf',
+    variable: '--font-eina-reg'
+})
+  
+const einaSemi = localFont({
+    src: './eina-03-semibold.ttf',
+    variable: '--font-eina-semi'
+})
+  
+const einaBold = localFont({
+    src: './eina-03-bold.ttf',
+    variable: '--font-eina-bold'
+})
 
 export const metadata = {
   title: 'Create Next App',
@@ -10,8 +23,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className={`${einaReg.variable} ${einaSemi.variable} ${einaBold.variable}`}>
+      <body>{children}</body>
     </html>
   )
 }
