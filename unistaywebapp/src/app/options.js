@@ -7,7 +7,7 @@ import SimpleMenu from "./menu";
 
 export default function Options() {
     return (
-        <div className="flex items-center gap-2">
+        <div className="flex items-start gap-2">
             <CustomIcon component={Lang} />
             <SimpleMenu />
         </div>
