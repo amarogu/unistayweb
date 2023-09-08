@@ -1,6 +1,7 @@
 "use client"
 import { Tab } from "@headlessui/react"
 import { Fragment } from "react"
+import Accommodations from "./accommodations"
 
 export default function Picker() {
     return (
@@ -31,7 +32,9 @@ export default function Picker() {
                 {/* ...  */}
             </Tab.List>
             <Tab.Panels>
-                <Tab.Panel>Content 1</Tab.Panel>
+                <Tab.Panel>
+                    <Accommodations />
+                </Tab.Panel>
                 {/* ... */}
             </Tab.Panels>
         </Tab.Group>
