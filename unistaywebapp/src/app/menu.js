@@ -17,6 +17,7 @@ function SimpleMenu(props) {
   const Button = props.button;
   const ButtonOpen = props.buttonOpen;
   const [showDivider, setShowDivider] = useState(false);
+  const {onSelect} = props;
 
   useEffect(() => {
     if (items.text.includes("Rental billing")) {
@@ -59,7 +60,7 @@ function SimpleMenu(props) {
                   } else {
                     return (
                       <Menu.Item key={index}>
-                        <a>
+                        <a onClick={() => onSelect(index)}>
                           <Label text={item} icon={items.icons[index]} />
                         </a>
                       </Menu.Item>
