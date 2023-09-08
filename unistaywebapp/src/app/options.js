@@ -9,6 +9,7 @@ export default function Options() {
     return (
         <div className="flex items-start gap-2">
             <CustomIcon component={Lang} />
+            <CustomIcon component={Profile} />
             <SimpleMenu />
         </div>
     )

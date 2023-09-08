@@ -1,13 +1,9 @@
-import { LanguageOutlined as Lang } from "@mui/icons-material";
-import { AccountCircleOutlined as Profile } from "@mui/icons-material";
-import Logo from "./logo";
-import Options from "./options";
+import NavBar from "./navBar";
 
-export default function Pagey() {
+export default function Page() {
   return (
-    <div className="bg-background-light dark:bg-background w-full h-[100vh]">
-      <Logo />
-      <Options />
+    <div className="mx-auto container p-5 max-w-[1024px] h-[100vh]">
+      <NavBar />
     </div>
   )
 }
