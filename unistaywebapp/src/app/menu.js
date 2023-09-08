@@ -2,18 +2,19 @@
 // Icons and personal
 import React, { Fragment, useEffect, useRef, useState } from 'react';
 import CustomIcon from './icon';
-import { Menu as MenuIcon, HomeOutlined as Home, NotificationsOutlined as Notification, ForumOutlined as Chats, CreditCardOutlined as Card, ExitToAppOutlined as LogOut, SettingsOutlined as Settings, Close } from '@mui/icons-material';
 import Label from './label';
 import { Divider } from '@mui/material';
+import {Menu as MenuIcon, Close} from '@mui/icons-material'; 
 
 import { Menu, Transition } from '@headlessui/react'
 
-const items = {
-  text: ['Home', 'Notifications', 'Chats', 'Rental billing', 'Log out', 'Settings'],
-  icons: [Home, Notification, Chats, Card, LogOut, Settings]
-}
 
-function SimpleMenu() {
+
+function SimpleMenu(props) {
+  const items = {
+    text: props.text,
+    icons: props.icons
+  };
   const [showDivider, setShowDivider] = useState(false);
 
   useEffect(() => {
