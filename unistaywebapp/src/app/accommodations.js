@@ -8,8 +8,7 @@ export default function Accommodations() {
                 <AccommodationItem />
             </Grid>
             <Grid>
-                <p>A</p>
-                <p>A</p>
+                <AccommodationItem />
             </Grid>
         </Grid>
     )
