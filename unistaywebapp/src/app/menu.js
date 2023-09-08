@@ -3,8 +3,7 @@
 import React, { Fragment, useEffect, useRef, useState } from 'react';
 import CustomIcon from './icon';
 import Label from './label';
-import { Divider } from '@mui/material';
-import {Menu as MenuIcon, Close} from '@mui/icons-material'; 
+import { Divider } from '@mui/material'; 
 
 import { Menu, Transition } from '@headlessui/react'
 
@@ -15,6 +14,8 @@ function SimpleMenu(props) {
     text: props.text,
     icons: props.icons
   };
+  const Button = props.button;
+  const ButtonOpen = props.buttonOpen;
   const [showDivider, setShowDivider] = useState(false);
 
   useEffect(() => {
@@ -29,7 +30,7 @@ function SimpleMenu(props) {
         {({ open }) => (
           <>
             <Menu.Button className="outline-none flex items-center">
-              <CustomIcon component={open ? Close : MenuIcon} />
+              <CustomIcon component={open ? ButtonOpen : Button} />
             </Menu.Button>
             <Transition
               as={Fragment}
