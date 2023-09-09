@@ -33,9 +33,9 @@ export default function Options() {
 
     return (
         <div className="flex items-start gap-2">
-            <SimpleMenu text={lang.text} icons={lang.icons} button={Lang} buttonOpen={Lang} onSelect={handleLangSelect}  />
+            <SimpleMenu text={lang.text} icons={lang.icons} button={Lang} buttonOpen={Lang} onSelect={handleLangSelect} menu={false} />
             <CustomIcon component={Profile} link />
-            <SimpleMenu text={menu.text} icons={menu.icons} button={MenuIcon} buttonOpen={Close} onSelect={() => {}} />
+            <SimpleMenu text={menu.text} icons={menu.icons} button={MenuIcon} buttonOpen={Close} onSelect={() => {}} menu={true} />
         </div>
     )
 }

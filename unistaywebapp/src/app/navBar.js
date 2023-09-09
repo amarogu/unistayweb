@@ -4,9 +4,9 @@ import SearchBar from "./searchBar"
 
 export default function NavBar() {
     return (
-        <nav className="flex items-center justify-between">
+        <nav className="flex items-center justify-between dark:text-body-dark-emphasized">
             <Logo />
-            <SearchBar />
+            <SearchBar menu={false} />
             <Options />
         </nav>
     )
