@@ -7,7 +7,7 @@ export default function Picker() {
     return (
         <div className="mt-10">
             <Tab.Group>
-                <Tab.List className="flex gap-4">
+                <Tab.List className="flex grow gap-4 bg-gradient-to-b dark:from-background dark:to-background/0 from-background-light to-background-light/0 absolute w-full pb-5">
                     <Tab as={Fragment} className="focus:outline-none">
                         {({ selected }) => (
                             /* Use the `selected` state to conditionally style the selected tab. */
@@ -32,7 +32,7 @@ export default function Picker() {
                     </Tab>
                     {/* ...  */}
                 </Tab.List>
-                <Tab.Panels className="mt-5">
+                <Tab.Panels className="">
                     <Tab.Panel>
                         <Accommodations />
                     </Tab.Panel>
