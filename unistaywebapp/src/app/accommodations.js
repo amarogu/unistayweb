@@ -57,11 +57,66 @@ export default function Accommodations() {
         rent: 1250,
         rating: 4.8,
         imageUrl: "/house.jpg"
+      }, {
+        location: "Nashville, TN",
+        rent: 1250,
+        rating: 4.8,
+        imageUrl: "/house.jpg"
+      }, {
+        location: "Nashville, TN",
+        rent: 1250,
+        rating: 4.8,
+        imageUrl: "/house.jpg"
+      }, {
+        location: "Nashville, TN",
+        rent: 1250,
+        rating: 4.8,
+        imageUrl: "/house.jpg"
+      }, {
+        location: "Nashville, TN",
+        rent: 1250,
+        rating: 4.8,
+        imageUrl: "/house.jpg"
+      }, {
+        location: "Nashville, TN",
+        rent: 1250,
+        rating: 4.8,
+        imageUrl: "/house.jpg"
+      }, {
+        location: "Nashville, TN",
+        rent: 1250,
+        rating: 4.8,
+        imageUrl: "/house.jpg"
+      }, {
+        location: "Nashville, TN",
+        rent: 1250,
+        rating: 4.8,
+        imageUrl: "/house.jpg"
+      }, {
+        location: "Nashville, TN",
+        rent: 1250,
+        rating: 4.8,
+        imageUrl: "/house.jpg"
+      }, {
+        location: "Nashville, TN",
+        rent: 1250,
+        rating: 4.8,
+        imageUrl: "/house.jpg"
+      }, {
+        location: "Nashville, TN",
+        rent: 1250,
+        rating: 4.8,
+        imageUrl: "/house.jpg"
+      }, {
+        location: "Nashville, TN",
+        rent: 1250,
+        rating: 4.8,
+        imageUrl: "/house.jpg"
       }]
     const amountOfAccommodations = accommodations.length;
     const oddAmount = amountOfAccommodations % 2 !== 0;
     return (
-        <div className="grid grid-cols-2 md:grid-cols-3 sm:w-fit dark:text-body-dark-emphasized text-body-light">
+        <div className="grid grid-cols-2 md:grid-cols-3 sm:w-fit dark:text-body-dark-emphasized text-body-light overflow-y-auto h-[calc(100vh-108px-1.25rem)]">
             {accommodations.map((accommodation, index) => {
                 return (
                     <AccommodationItem key={index} location={accommodation.location} rent={accommodation.rent} rating={accommodation.rating} imageUrl={accommodation.imageUrl} className={`${index % 2 !== 0 ? "ml-auto" : "mr-auto"} md:mx-0`} />
