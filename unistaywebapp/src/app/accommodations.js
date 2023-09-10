@@ -121,7 +121,7 @@ export default function Accommodations() {
           <div className="grid grid-cols-2 md:grid-cols-3 sm:w-fit dark:text-body-dark-emphasized text-body-light">
             {accommodations.map((accommodation, index) => {
                 return (
-                    <AccommodationItem key={index} location={accommodation.location} rent={accommodation.rent} rating={accommodation.rating} imageUrl={accommodation.imageUrl} className={`${index % 2 !== 0 ? "ml-auto" : "mr-auto"} sm:ml-0 sm:mr-6`} />
+                    <AccommodationItem key={index} location={accommodation.location} rent={accommodation.rent} rating={accommodation.rating} imageUrl={accommodation.imageUrl} />
                 )
             })}
           </div>
