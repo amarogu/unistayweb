@@ -51,7 +51,7 @@ function SimpleMenu(props) {
                       <Fragment key={index}>
                         <Menu.Item>
                           <a>
-                            <Label text={item} icon={items.icons[index]} order={false} measures="my-4 pl-4 pr-10" />
+                            <Label text={item} icon={items.icons[index]} order={false} measures="my-4 pl-4 pr-10" textProperties="text-sm whitespace-nowrap" />
                           </a>
                         </Menu.Item>
                         {showDivider && (
@@ -63,7 +63,7 @@ function SimpleMenu(props) {
                     return (
                       <Menu.Item key={index}>
                         <a onClick={() => onSelect(index)}>
-                          <Label text={item} icon={items.icons[index]} order={false} measures="my-4 pl-4 pr-10" />
+                          <Label text={item} icon={items.icons[index]} order={false} measures="my-4 pl-4 pr-10" textProperties="text-sm whitespace-nowrap" />
                         </a>
                       </Menu.Item>
                     );

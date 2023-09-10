@@ -28,7 +28,7 @@ module.exports = {
         einaReg: ['var(--font-eina-reg)'],
         einaSemi: ['var(--font-eina-semi)'],
         einaBold: ['var(--font-eina-bold)'],
-      }
+      },
     },
   },
   plugins: [],

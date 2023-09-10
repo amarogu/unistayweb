@@ -32,11 +32,16 @@ export default function Picker() {
                     </Tab>
                     {/* ...  */}
                 </Tab.List>
-                <Tab.Panels>
+                <Tab.Panels className="mt-5">
                     <Tab.Panel>
                         <Accommodations />
                     </Tab.Panel>
-                    {/* ... */}
+                    <Tab.Panel>
+                        <Accommodations />
+                    </Tab.Panel>
+                    <Tab.Panel>
+                        <Accommodations />
+                    </Tab.Panel>
                 </Tab.Panels>
             </Tab.Group>
         </div>
