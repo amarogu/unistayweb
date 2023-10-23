@@ -11,7 +11,7 @@ export default function AccommodationItem(props) {
     const rating = props.rating
     const className = props.className;
     return(
-        <div className={`my-5 bg-gray rounded-xl p-3 ${className}`}>
+        <div className={`bg-gray rounded-xl p-3 ${className}`}>
             <figure className="bg-cover bg-center rounded-xl w-full aspect-square" style={{backgroundImage: `url(${imageUrl})`}}></figure>
             <div>
                 <Label text={location} icon={Loc} order={true} measures="my-4 sm:max-w-[initial] hidden sm:flex" textProperties="text-xs" />

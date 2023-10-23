@@ -5,9 +5,9 @@ import Accommodations from "./accommodations"
 
 export default function Picker() {
     return (
-        <div className="mt-10">
+        <div className="mt-10 box-border">
             <Tab.Group>
-                <Tab.List className="flex grow gap-4 bg-gradient-to-b dark:from-background dark:to-background/0 from-background-light to-background-light/0 absolute w-full pb-5">
+                <Tab.List className="flex grow gap-4 bg-gradient-to-b dark:from-background dark:to-background/0 from-background-light to-background-light/0 fixed w-full pb-5 top-[68px] md:top-[72px]">
                     <Tab as={Fragment} className="focus:outline-none">
                         {({ selected }) => (
                             /* Use the `selected` state to conditionally style the selected tab. */

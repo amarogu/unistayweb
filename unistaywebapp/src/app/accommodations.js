@@ -116,9 +116,9 @@ export default function Accommodations() {
     const amountOfAccommodations = accommodations.length;
     const oddAmount = amountOfAccommodations % 2 !== 0;
     return (
-        <div className="overflow-y-auto h-[calc(100vh-92px-1.25rem)]">
+        <div className="">
           <div className="h-[36px]"></div>
-          <div className="grid grid-cols-2 md:grid-cols-3 sm:w-fit dark:text-body-dark-emphasized text-body-light">
+          <div className="grid grid-cols-2 gap-x-5 gap-y-4 md:gap-y-3 md:gap-x-3 md:grid-cols-3 sm:w-fit dark:text-body-dark-emphasized text-body-light">
             {accommodations.map((accommodation, index) => {
                 return (
                     <AccommodationItem key={index} location={accommodation.location} rent={accommodation.rent} rating={accommodation.rating} imageUrl={accommodation.imageUrl} />
