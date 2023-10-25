@@ -25,3 +25,12 @@ body {
   background-image: url(../../public/Group\ 56.png);
   background-size: cover;
 }
+
+.hero {
+  background-image: url(../../public/hero@2x.png);
+  background-size: cover;
+}
+
+input, textarea, button, select, a {
+  -webkit-tap-highlight-color: transparent;
+}
