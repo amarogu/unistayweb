@@ -3,6 +3,7 @@ import Typewriter from 'typewriter-effect';
 import Image from 'next/image';
 import Button from '../GeneralUse/Button';
 import Input from '../GeneralUse/Input';
+import Modal from '../GeneralUse/Modal';
 
 const Hero = () => {
     return (
