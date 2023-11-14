@@ -5,17 +5,20 @@ import Button from '../GeneralUse/Button';
 import Input from '../GeneralUse/Input';
 import Modal from '../GeneralUse/Modal';
 import PlaceholderInput from '../GeneralUse/PlaceholderInput';
+import { useContext } from 'react';
+import LanguageContext from '../LanguageContext';
 
 const Hero = () => {
+    const {language} = useContext(LanguageContext);
     return (
         <section className='py-8 flex items-center flex-col gap-12'>
             <div className='flex flex-col gap-6 items-center'>
                 <div className='flex flex-col items-center sm:flex-row gap-1 sm:gap-6 sm:justify-center text-5xl sm:text-6xl font-einaSemi'>
-                    <h1 className=''>Find a</h1>
+                    <h1 className='text-center'>{language == 'English' ? 'Find a' : 'Encontre um(a)'}</h1>
                     <div className='bg-accent w-fit'>
                         <Typewriter
                             options={{
-                                strings: ['Place', 'House', 'Room', 'Home'],
+                                strings: [language == 'English' ? 'Place' : 'Lugar', language == 'English' ? 'House' : 'Casa', language == 'English' ? 'Room' : 'Sala', language == 'English' ? 'Home' : 'Lar'],
                                 autoStart: true,
                                 loop: true,
                             }}
