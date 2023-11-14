@@ -2,7 +2,8 @@ import Image from 'next/image'
 import Navbar from './NavComponents/Navbar'
 import Hero from './Hero/Hero'
 import About from './About/About'
-import Features from './Features/Features'
+import Footer from './Footer/Footer'
+
 
 export default function Home() {
   return (
@@ -17,9 +18,9 @@ export default function Home() {
       <section className='text-center p-8'>
         <About />
       </section>
-      <section>
-        <Features />
-      </section>
+      <footer className='mx-auto p-8 container sm:max-w-[516px] md:max-w-[768px] lg:max-w-[1024px]'>
+        <Footer />
+      </footer>
     </main>
   )
 }

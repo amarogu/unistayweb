@@ -46,11 +46,11 @@ export default function Modal({ Component, ...props }) {
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900"
                   >
-                    Install application
+                    {props.title ? props.title : 'Install application'}
                   </Dialog.Title>
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">
-                      In order to use the system's functionalities, you need to install the iOS application. For now, the app is available only for registered beta testers. You can request access to it via email.
+                    {props.description ? props.description : "In order to use the system's functionalities, you need to install the iOS application. For now, the app is available only for registered beta testers. You can request access to it via email."}
                     </p>
                   </div>
 
