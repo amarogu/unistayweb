@@ -18,9 +18,11 @@ export default function Home() {
       <section className='text-center p-8'>
         <About />
       </section>
-      <footer className='mx-auto p-8 container sm:max-w-[516px] md:max-w-[768px] lg:max-w-[1024px]'>
-        <Footer />
-      </footer>
+      <div className='border-t-2 border-gray'>
+        <footer className='mx-auto p-8 container sm:max-w-[516px] md:max-w-[768px] lg:max-w-[1024px]'>
+          <Footer />
+        </footer>
+      </div>
     </main>
   )
 }
