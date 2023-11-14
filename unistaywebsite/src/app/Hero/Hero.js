@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Button from '../GeneralUse/Button';
 import Input from '../GeneralUse/Input';
 import Modal from '../GeneralUse/Modal';
+import PlaceholderInput from '../GeneralUse/PlaceholderInput';
 
 const Hero = () => {
     return (
@@ -21,10 +22,10 @@ const Hero = () => {
                         />
                     </div>
                 </div>
-                <p className='max-w-[260px] sm:max-w-[400px] text-center'>With UniStay you can easily find housing options for your university season, roomates to connect with and more. </p>
+                <p className='max-w-[260px] sm:max-w-[400px] text-center text-body-dark'>With UniStay you can easily find housing options for your university season, roomates to connect with and more. </p>
                 <div className='flex flex-col sm:flex-row gap-4'>
-                    <Button text='Get Started' onClick={() => {}} />
-                    <Input placeholder='Search for a place' />
+                    <Modal Component={Button} text='Get started' />
+                    <Modal Component={PlaceholderInput} placeholder='Search for a place' />
                 </div>
             </div>
             <Image src='/hero@2x.png' className='max-w-[800px] sm:max-w-full' alt="Illustration" width={3112} height={1535} />

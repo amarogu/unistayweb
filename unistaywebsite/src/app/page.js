@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Navbar from './NavComponents/Navbar'
 import Hero from './Hero/Hero'
 import About from './About/About'
+import Features from './Features/Features'
 
 export default function Home() {
   return (
@@ -15,6 +16,9 @@ export default function Home() {
       </section>
       <section className='text-center p-8'>
         <About />
+      </section>
+      <section>
+        <Features />
       </section>
     </main>
   )

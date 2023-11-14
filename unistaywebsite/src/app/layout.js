@@ -25,7 +25,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${einaReg.variable} ${einaSemi.variable} ${einaBold.variable} bg-background`}>{children}</body>
+      <body className={`${einaReg.variable} ${einaSemi.variable} ${einaBold.variable} font-einaReg text-body-dark-emphasized bg-background`}>{children}</body>
     </html>
   )
 }
