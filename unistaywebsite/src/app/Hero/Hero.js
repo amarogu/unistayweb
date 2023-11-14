@@ -18,17 +18,17 @@ const Hero = () => {
                     <div className='bg-accent w-fit'>
                         <Typewriter
                             options={{
-                                strings: [language == 'English' ? 'Place' : 'Lugar', language == 'English' ? 'House' : 'Casa', language == 'English' ? 'Room' : 'Sala', language == 'English' ? 'Home' : 'Lar'],
+                                strings: [language == 'English' ? 'Place' : 'Lugar', language == 'English' ? 'House' : 'Casa', language == 'English' ? 'Room' : 'Quarto', language == 'English' ? 'Home' : 'Lar'],
                                 autoStart: true,
                                 loop: true,
                             }}
                         />
                     </div>
                 </div>
-                <p className='max-w-[260px] sm:max-w-[400px] text-center text-body-dark'>With UniStay you can easily find housing options for your university season, roomates to connect with and more. </p>
+                <p className='max-w-[260px] sm:max-w-[400px] text-center text-body-dark'>{language == "English" ? "With UniStay you can easily find housing options for your university season, roomates to connect with and more." : "Com UniStay você consegue facilmente encontrar opções de alojamento para seu período universitário, colegas de quarto e mais."}</p>
                 <div className='flex flex-col sm:flex-row gap-4'>
-                    <Modal Component={Button} text='Get started' />
-                    <Modal Component={PlaceholderInput} placeholder='Search for a place' />
+                    <Modal Component={Button} text={language == 'English' ? 'Get started' : 'Começar'} />
+                    <Modal Component={PlaceholderInput} placeholder={language == 'English' ? 'Search for a place' : 'Busque um lugar'} />
                 </div>
             </div>
             <Image src='/hero@2x.png' className='max-w-[800px] sm:max-w-full' alt="Illustration" width={3112} height={1535} />
