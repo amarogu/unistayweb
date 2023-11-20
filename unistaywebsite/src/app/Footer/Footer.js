@@ -37,6 +37,7 @@ const Footer = () => {
                             <div className='flex items-center gap-3'>
                                 <a
                                 onClick={() => setLanguage('English')}
+                                className="cursor-pointer"
                                 >
                                 English
                                 </a>
@@ -47,6 +48,7 @@ const Footer = () => {
                             <div className='flex items-center gap-3'>
                                 <a
                                 onClick={() => setLanguage('Português')}
+                                className="cursor-pointer"
                                 >
                                 Português
                                 </a>
