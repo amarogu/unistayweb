@@ -2,6 +2,7 @@
 import { useContext } from 'react';
 import LanguageContext from '../LanguageContext';
 import ExplanationItem from './ExplanationItem';
+import FieldResearch from './FieldResearch';
 
 const Explanation = () => {
     const {language} = useContext(LanguageContext);
@@ -51,6 +52,7 @@ const Explanation = () => {
                         pt: "Fornecemos uma plataforma onde você pode encontrar todas as informações que precisa para encontrar seu lugar, como: localizações, universidades, tipos de acomodação e mais."
                     }
                 }} />
+                <FieldResearch />
             </div>
         </div>
     )
