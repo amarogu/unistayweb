@@ -7,7 +7,7 @@ const ExplanationItem = (props) => {
     const {language} = useContext(LanguageContext);
     return (
         <div className='pt-8'>
-            <div className='flex flex-col gap-3 max-w-[350px] mx-auto text-left'>
+            <div className='flex flex-col gap-4 max-w-[350px] mx-auto text-left'>
                 <div className='flex gap-3'>
                     <Image src={props.iconSrc} width={38} height={38} />
                     <div className='flex flex-col items-start'>
@@ -18,7 +18,7 @@ const ExplanationItem = (props) => {
                 <p>
                     {language == 'English' ? props.data.content.en : props.data.content.pt}
                 </p>
-                <Image src={props.imgSrc} width={190} height={0} />
+                <Image src={props.imgSrc} width={250} height={0} />
             </div>
         </div>
     )

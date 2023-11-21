@@ -19,9 +19,11 @@ export default function Home() {
         </section>
         <section className='text-center p-8 mx-auto container sm:max-w-[516px] md:max-w-[768px] lg:max-w-[1024px]'>
           <About />
+        </section>
+        <section className='bg-gradient'>
           <Explanation />
         </section>
-        <div className='border-t-2 border-gray'>
+        <div className='border-t-2 border-gray '>
           <footer className='mx-auto p-8 container sm:max-w-[516px] md:max-w-[768px] lg:max-w-[1024px]'>
             <Footer />
           </footer>

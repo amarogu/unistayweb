@@ -4,8 +4,11 @@ import MenuIcon from '@mui/icons-material/Menu';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import LockIcon from '@mui/icons-material/Lock';
+import { useContext } from 'react';
+import LanguageContext from '../LanguageContext'; // import the context
 
 function DropdownMenu() {
+    const {language} = useContext(LanguageContext); // use the context
   return (
     <Menu>
         <Menu.Button className="outline-none">
@@ -23,8 +26,9 @@ function DropdownMenu() {
                 <Menu.Item className="py-2">
                     <div className='flex items-center gap-3'>
                         <a
+                        className='cursor-pointer'
                         >
-                        Privacy
+                        {language == 'English' ? 'Privacy' : 'Privacidade'}
                         </a>
                         <LockIcon  className='text-base'/>
                     </div>
@@ -32,8 +36,9 @@ function DropdownMenu() {
                 <Menu.Item className="py-2">
                     <div className='flex items-center gap-3'>
                         <a
+                        className='cursor-pointer'
                         >
-                        Help
+                        {language == 'English' ? 'Help' : 'Ajuda'}
                         </a>
                         <HelpOutlineIcon  className='text-base'/>
                     </div>
@@ -41,8 +46,9 @@ function DropdownMenu() {
                 <Menu.Item className="py-2">
                     <div className='flex items-center gap-3'>
                         <a
+                        className='cursor-pointer'
                         >
-                        Features
+                        {language == 'English' ? 'Features' : 'Funcionalidades'}
                         </a>
                         <LibraryBooksIcon  className='text-base'/>
                     </div>
