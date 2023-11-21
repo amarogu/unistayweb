@@ -37,6 +37,20 @@ const Explanation = () => {
                         pt: "O objetivo da UniStay é tornar esse processo mais fácil para você, fornecendo uma plataforma onde você pode encontrar todas as informações que precisa para encontrar seu lugar."
                     }
                 }} />
+                <ExplanationItem iconSrc="/methodology.svg" imgSrc="/methodology2.svg" data={{
+                    sub: {
+                        en: "The",
+                        pt: "A"
+                    },
+                    title: {
+                        en: "Methodology",
+                        pt: "Metodologia"
+                    },
+                    content: {
+                        en: "We provide a platform where you can find all the information you need to find your place, such as: locations, universities, accommodation types and more.",
+                        pt: "Fornecemos uma plataforma onde você pode encontrar todas as informações que precisa para encontrar seu lugar, como: localizações, universidades, tipos de acomodação e mais."
+                    }
+                }} />
             </div>
         </div>
     )

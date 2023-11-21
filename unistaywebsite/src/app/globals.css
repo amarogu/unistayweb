@@ -26,6 +26,12 @@ body {
   background-size: cover;
 }
 
+.bg-gradient-contain {
+  background-image: url(../../public/explanation.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .hero {
   background-image: url(../../public/hero@2x.png);
   background-size: cover;
