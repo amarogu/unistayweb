@@ -31,7 +31,7 @@ function DropdownMenu() {
                         >
                         {language == 'English' ? 'Privacy' : 'Privacidade'}
                         </a>
-                        <LockIcon className='w-[14px]' />
+                        <LockIcon className='!w-[14px]' />
                     </div>
                 </Menu.Item>
                 <Menu.Item className="py-2">
