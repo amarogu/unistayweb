@@ -1,6 +1,8 @@
 'use client'
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
+import { useContext } from 'react'
+import LanguageContext from '../LanguageContext'
 
 export default function Modal({ Component, ...props }) {
   let [isOpen, setIsOpen] = useState(false)
@@ -12,6 +14,8 @@ export default function Modal({ Component, ...props }) {
   function handleOpenModal() {
     setIsOpen(true)
   }
+
+  const {language} = useContext(LanguageContext); // use the context
 
   return (
     <>
@@ -50,7 +54,7 @@ export default function Modal({ Component, ...props }) {
                   </Dialog.Title>
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">
-                    {props.description ? props.description : "In order to use the system's functionalities, you need to install the iOS application. For now, the app is available only for registered beta testers. You can request access to it via email."}
+                    {props.description ? props.description : language == 'English' ? 'You can install the application by contacting me :).' : 'Você pode instalar o aplicativo me contatando :).'}
                     </p>
                   </div>
 

@@ -69,10 +69,10 @@ const Footer = () => {
             <p className="font-einaSemi text-body-dark-emphasized">Our application</p>
             <Modal Component={({onClick}) => {return(
                 <a onClick={onClick} className="cursor-pointer">Web app</a>
-            )}} title="Work in progress" description="This feature is a work in progress and is not available yet." />
+            )}} title="Work in progress" description={language == 'English' ? "This feature is a work in progress and is not available yet." : "Essa funcionalidade ainda está em desenvolvimento e aidna não está disponível."} />
             <Modal Component={({onClick}) => {return(
                 <a onClick={onClick} className="cursor-pointer">iOS app</a>
-            )}} title="Request access" description="To request access to the application get in contact with Gustavo :)" />
+            )}} title="Request access" description={language == 'English' ? "To request access to the application get in contact with Gustavo." : 'Para solicitar acesso ao aplicativo entre em contato com o Gustavo.'} />
         </div>
         <div className="flex flex-col gap-3 text-body-dark">
             <p className="font-einaSemi text-body-dark-emphasized">Your privacy</p>
@@ -80,7 +80,7 @@ const Footer = () => {
                 return(
                     <a onClick={onClick} className="cursor-pointer">Privacy policy</a>
                 )
-            }} title="Work in progress" description="The privacy policy is being written. As soon as it is ready it will be updated here." />
+            }} title="Work in progress" description={language == 'English' ? "The privacy policy is being written. As soon as it is ready it will be updated here." : 'A política de privcidade está sendo escrita. Assim que ela estiver pronta ela será atualizada aqui.'} />
         </div>
       </div>
     </div>
