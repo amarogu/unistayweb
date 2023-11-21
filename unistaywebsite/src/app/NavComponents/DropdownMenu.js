@@ -13,7 +13,7 @@ function DropdownMenu() {
   return (
     <Menu>
         <Menu.Button className="outline-none">
-            <MenuIcon className='w-[16px]' />
+            <MenuIcon className='!w-[16px]' />
         </Menu.Button>
         <Transition
             enter="transition duration-100 ease-out"
@@ -41,7 +41,7 @@ function DropdownMenu() {
                         >
                         {language == 'English' ? 'Help' : 'Ajuda'}
                         </a>
-                        <HelpOutlineIcon  className='w-[14px]'/>
+                        <HelpOutlineIcon  className='!w-[14px]'/>
                     </div>
                 </Menu.Item>
                 <Menu.Item className="py-2">
@@ -51,7 +51,7 @@ function DropdownMenu() {
                         >
                         {language == 'English' ? 'Features' : 'Funcionalidades'}
                         </a>
-                        <LibraryBooksIcon  className='w-[14px]'/>
+                        <LibraryBooksIcon  className='!w-[14px]'/>
                     </div>
                 </Menu.Item>
                 <Menu.Item>
@@ -59,7 +59,7 @@ function DropdownMenu() {
                         <Menu>
                             <Menu.Button className="outline-none py-2">
                                 <button className="border border-body-dark/30 bg-gray/30 py-1 px-4 shadow-sm flex items-center gap-3 rounded">
-                                    <LanguageOutlined className='w-[14px]'/>
+                                    <LanguageOutlined className='!w-[14px]'/>
                                     <p>
                                     {language}
                                     </p>

@@ -50,7 +50,7 @@ export default function Modal({ Component, ...props }) {
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900"
                   >
-                    {props.title ? props.title : 'Install application'}
+                    {props.title ? props.title : language == 'English' ? 'Install the app' : 'Instale o aplicativo'}
                   </Dialog.Title>
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">
@@ -64,7 +64,7 @@ export default function Modal({ Component, ...props }) {
                       className="inline-flex justify-center rounded-md border border-transparent bg-accent px-4 py-2 text-sm font-medium text-body-dark-emphasized hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
                       onClick={closeModal}
                     >
-                      Got it, thanks!
+                      {language == 'English' ? 'Got it, thanks!' : 'Entendi, obrigado!'}
                     </button>
                   </div>
                 </Dialog.Panel>
