@@ -13,7 +13,7 @@ function DropdownMenu() {
   return (
     <Menu>
         <Menu.Button className="outline-none">
-            <MenuIcon className='text-lg' />
+            <MenuIcon className='w-[16px]' />
         </Menu.Button>
         <Transition
             enter="transition duration-100 ease-out"
@@ -31,7 +31,7 @@ function DropdownMenu() {
                         >
                         {language == 'English' ? 'Privacy' : 'Privacidade'}
                         </a>
-                        <LockIcon  className='text-base'/>
+                        <LockIcon className='w-[14px]' />
                     </div>
                 </Menu.Item>
                 <Menu.Item className="py-2">
@@ -41,7 +41,7 @@ function DropdownMenu() {
                         >
                         {language == 'English' ? 'Help' : 'Ajuda'}
                         </a>
-                        <HelpOutlineIcon  className='text-base'/>
+                        <HelpOutlineIcon  className='w-[14px]'/>
                     </div>
                 </Menu.Item>
                 <Menu.Item className="py-2">
@@ -51,7 +51,7 @@ function DropdownMenu() {
                         >
                         {language == 'English' ? 'Features' : 'Funcionalidades'}
                         </a>
-                        <LibraryBooksIcon  className='text-base'/>
+                        <LibraryBooksIcon  className='w-[14px]'/>
                     </div>
                 </Menu.Item>
                 <Menu.Item>
@@ -59,7 +59,7 @@ function DropdownMenu() {
                         <Menu>
                             <Menu.Button className="outline-none py-2">
                                 <button className="border border-body-dark/30 bg-gray/30 py-1 px-4 shadow-sm flex items-center gap-3 rounded">
-                                    <LanguageOutlined className='text-sm'/>
+                                    <LanguageOutlined className='w-[14px]'/>
                                     <p>
                                     {language}
                                     </p>
