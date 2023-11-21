@@ -21,6 +21,7 @@ const Hero = () => {
                                 strings: [language == 'English' ? 'Place' : 'Lugar', language == 'English' ? 'House' : 'Casa', language == 'English' ? 'Room' : 'Quarto', language == 'English' ? 'Home' : 'Lar'],
                                 autoStart: true,
                                 loop: true,
+                                cursorClassName: '-z-index-[1]'
                             }}
                         />
                     </div>
