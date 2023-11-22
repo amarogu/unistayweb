@@ -9,7 +9,7 @@ const Explanation = () => {
     return (
         <div className='p-8'>
             <h2 className="font-einaSemi text-center max-w-[300px] sm:max-w-[280px] mx-auto">{language == "English" ? "Everything you need for your uni housing experience, all in one place" : "Tudo que você precisa para sua experiência de casitas universitárias, tudo em um só lugar" }</h2>
-            <div className='flex flex-col gap-7'>
+            <div className='grid grid-cols-1 md:grid-rows-2 md:grid-cols-2 md:gap-y-12'>
                 <ExplanationItem iconSrc="/problematics.svg" imgSrc="/problematics2.svg" data={{
                     sub: {
                         en: "The",

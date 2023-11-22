@@ -5,6 +5,7 @@ import About from './About/About'
 import Footer from './Footer/Footer'
 import { LanguageProvider } from './LanguageContext';
 import Explanation from './Explanation/Explanation'
+import Technologies from './Technologies/Technologies'
 
 export default function Home() {
   return (
@@ -17,12 +18,18 @@ export default function Home() {
           </section>
           <div className='h-32 bg-gradient-to-t absolute bottom-0 w-screen from-background to-background/0'></div>
         </section>
-        <section className='text-center p-8 mx-auto container sm:max-w-[516px] md:max-w-[768px] lg:max-w-[1024px]'>
+        <section className='text-center p-8 mb-10 mx-auto container sm:max-w-[516px] md:max-w-[768px] lg:max-w-[1024px]'>
           <About />
         </section>
         <section className='bg-gradient-contain'>
-          <Explanation />
-          
+          <div className='sm:max-w-[516px] mx-auto md:max-w-[768px] lg:max-w-[1024px]'>
+            <Explanation />
+          </div>
+        </section>
+        <section>
+          <div className='sm:max-w-[516px] mx-auto md:max-w-[768px] lg:max-w-[1024px]'>
+            <Technologies />
+          </div>
         </section>
         <div className='border-t-2 border-gray '>
           <footer className='mx-auto p-8 container sm:max-w-[516px] md:max-w-[768px] lg:max-w-[1024px]'>
