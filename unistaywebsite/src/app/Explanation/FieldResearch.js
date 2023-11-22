@@ -3,10 +3,10 @@ import { useContext } from 'react';
 import LanguageContext from '../LanguageContext';
 import Image from 'next/image';
 
-const FieldResearch = () => {
+const FieldResearch = (props) => {
     const {language} = useContext(LanguageContext);
     return (
-        <div className='pt-8'>
+        <div className={props.className}>
             <div className='flex flex-col gap-4 max-w-[350px] mx-auto text-left'>
                 <div className='flex gap-3'>
                     <Image src='/fieldresearch.svg' width={38} height={38} />

@@ -6,7 +6,7 @@ import Image from 'next/image';
 const ExplanationItem = (props) => {
     const {language} = useContext(LanguageContext);
     return (
-        <div className='pt-8'>
+        <div className={props.className}>
             <div className='flex flex-col gap-4 max-w-[350px] mx-auto text-left'>
                 <div className='flex gap-3'>
                     <Image src={props.iconSrc} width={38} height={38} />
