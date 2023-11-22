@@ -7,7 +7,7 @@ const Technologies = () => {
     const { language } = useContext(LanguageContext);
     return(
         <div className="p-8 md:mb-8 m-8 md:m-0 bg-gray rounded border border-slate-500">
-            <div className="flex flex-col md:flex-row justify-between">
+            <div className="flex flex-col gap-8 md:gap-0 md:flex-row justify-between">
                 <div className="flex flex-col md:max-w-[40%] gap-2">
                     <div>
                         <h2 className="font-einaSemi text-lg">
