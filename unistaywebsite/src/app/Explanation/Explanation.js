@@ -37,7 +37,7 @@ const Explanation = () => {
                         en: "The goal of UniStay is to make this process easier for you, by providing a platform where you can find all the information you need to find your place.",
                         pt: "O objetivo da UniStay é tornar esse processo mais fácil para você, fornecendo uma plataforma onde você pode encontrar todas as informações que precisa para encontrar seu lugar."
                     }
-                }} className="pt-12 sm:pt-8 w-fit sm:ml-auto" />
+                }} className="pt-12 sm:pt-8 w-fit md:ml-auto" />
                 <ExplanationItem iconSrc="/methodology.svg" imgSrc="/methodology2.svg" data={{
                     sub: {
                         en: "The",
@@ -52,7 +52,7 @@ const Explanation = () => {
                         pt: "Fornecemos uma plataforma onde você pode encontrar todas as informações que precisa para encontrar seu lugar, como: localizações, universidades, tipos de acomodação e mais."
                     }
                 }} className="pt-12 sm:pt-8 w-fit" />
-                <FieldResearch className="pt-12 sm:pt-8 w-fit sm:ml-auto" />
+                <FieldResearch className="pt-12 sm:pt-8 w-fit md:ml-auto" />
             </div>
         </div>
     )
