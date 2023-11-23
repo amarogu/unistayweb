@@ -54,7 +54,7 @@ export default function Modal({ Component, ...props }) {
                   </Dialog.Title>
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">
-                    {props.description ? props.description : language == 'English' ? 'You can install the application by contacting me :).' : 'Você pode instalar o aplicativo me contatando :).'}
+                    {props.description ? props.description : language == 'English' ? 'You can install the application by contacting me' : 'Você pode instalar o aplicativo me contatando'}
                     </p>
                   </div>
 
