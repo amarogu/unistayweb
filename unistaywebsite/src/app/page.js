@@ -6,6 +6,7 @@ import Footer from './Footer/Footer'
 import { LanguageProvider } from './LanguageContext';
 import Explanation from './Explanation/Explanation'
 import Technologies from './Technologies/Technologies'
+import Advertisement from './Advertisement/Advertisement'
 
 export default function Home() {
   return (
@@ -29,6 +30,11 @@ export default function Home() {
         <section>
           <div className='sm:max-w-[516px] mx-auto md:max-w-[768px] lg:max-w-[1024px]'>
             <Technologies />
+          </div>
+        </section>
+        <section>
+          <div className='sm:max-w-[516px] mx-auto md:max-w-[768px] lg:max-w-[1024px]'>
+            <Advertisement />
           </div>
         </section>
         <div className='border-t-2 border-gray '>
